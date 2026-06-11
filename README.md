@@ -1,5 +1,12 @@
 # CoMoFoD — Copy-Move Forgery Detection: Model Testing, Optimisation & Comparison
 
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20-FF6F00?logo=tensorflow&logoColor=white)
+![Best Test Accuracy](https://img.shields.io/badge/Best%20Test%20Accuracy-99.82%25-brightgreen)
+![Best ROC--AUC](https://img.shields.io/badge/Best%20ROC--AUC-1.0000-brightgreen)
+![Models Compared](https://img.shields.io/badge/Models%20Compared-6-blueviolet)
+![Task](https://img.shields.io/badge/Task-Copy--Move%20Forgery%20Detection-informational)
+
 This repository contains the execution code, results and description for testing
 and optimising a copy-move forgery-detection model on the CoMoFoD-style dataset,
 together with a six-model comparison study.
@@ -47,6 +54,15 @@ Train on `Data/New`, validate on a held-out split, test on `Data/Old`.
 highest ROC-AUC and fewest false negatives. Saved as
 `comparison/model/best_model.keras`. All six models exceed **99% test accuracy**.
 
+#### Comparison figures
+| Accuracy (train / val / test) | ROC curves (test set) |
+|:--:|:--:|
+| ![accuracy](comparison/result/bar_accuracy.png) | ![roc](comparison/result/roc_all_models.png) |
+
+| Validation accuracy vs epoch | Validation loss vs epoch |
+|:--:|:--:|
+| ![valacc](comparison/result/line_validation_accuracy.png) | ![valloss](comparison/result/line_validation_loss.png) |
+
 ### 3. Localisation task (per-block forged/authentic map)
 A harder task where the frozen embedding carries only a weak signal; the
 optimised classifier still beats the original detector on every metric
@@ -56,6 +72,10 @@ optimised classifier still beats the original detector on every metric
 ## Environment
 TensorFlow 2.20 in a short-path venv (`C:\tfv`) — the legacy TF1 meta-graph is
 loaded under `tf.compat.v1`. See `comparison/README.md` for reproduction steps.
+
+## Session log
+A chronological log of the PowerShell commands and outputs (environment repair →
+evaluation → comparison → commit) is in [`logs/execution_log.md`](logs/execution_log.md).
 
 ## Notes
 * Large regenerable artefacts (`*.npz` embedding caches) and the original frozen
