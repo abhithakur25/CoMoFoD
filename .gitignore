@@ -1,0 +1,7 @@
+# regenerable / large artefacts
+*.npz
+__pycache__/
+*.pyc
+# original frozen model checkpoints & dataset (committed elsewhere / too large)
+*.h5
+encoder_weights.npy

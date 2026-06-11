@@ -1,0 +1,13 @@
+=== BASELINE  (raw embedding-distance verification, 10-fold CV) ===
+cv_accuracy        : 0.7250 +/- 0.0123
+threshold (mean)   : 0.0460
+precision          : 0.6814
+recall             : 0.8522
+f1                 : 0.7573
+accuracy@threshold : 0.7269
+roc_auc            : 0.7678
+average_precision  : 0.6668
+held-out(Old) acc  : 0.7442   f1 0.7941   auc 0.8429
+confusion_matrix [rows=actual imp/gen, cols=pred imp/gen]:
+[[2406 1594]
+ [ 591 3409]]

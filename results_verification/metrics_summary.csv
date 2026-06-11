@@ -1,0 +1,8 @@
+metric,baseline,optimized
+accuracy,0.7250,0.9938
+precision,0.6814,0.9954
+recall,0.8522,0.9931
+f1,0.7573,0.9943
+roc_auc,0.7678,0.9995
+average_precision,0.6668,0.9996
+held_out_old_acc,0.7442,0.9982

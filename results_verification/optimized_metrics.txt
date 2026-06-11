@@ -1,0 +1,15 @@
+=== OPTIMISED  (learned MLP verifier on frozen embeddings) ===
+accuracy           : 0.9938
+precision          : 0.9954
+recall             : 0.9931
+f1                 : 0.9943
+roc_auc            : 0.9995
+average_precision  : 0.9996
+train_loss (final) : 0.0234
+val_loss   (final) : 0.0562
+train_acc  (final) : 0.9998
+val_acc    (final) : 0.9900
+held-out(Old) acc  : 0.9982   f1 0.9983   auc 1.0000
+confusion_matrix [rows=actual imp/gen, cols=pred imp/gen]:
+[[724   4]
+ [  6 866]]

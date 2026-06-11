@@ -1,0 +1,11 @@
+=== BASELINE  (distance-threshold detector, frozen model, 5-fold CV) ===
+decision_threshold : 0.6221
+precision          : 0.1516
+recall             : 0.9846
+f1                 : 0.2628
+accuracy           : 0.1578
+average_precision  : 0.1327
+roc_auc            : 0.4245
+confusion_matrix [rows=actual 0/1, cols=pred 0/1]:
+[[  33 3570]
+ [  10  638]]
